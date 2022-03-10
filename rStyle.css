@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(110, 15, 15, 0.781);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    color: rgb(102, 115, 228);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+    /* Scroll Snap */
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: 4rem;
+}
+
+/* Section Images (colors in this case)*/
+section#home {
+    background-color: black;
+}
+
+section#trial {
+    background-color: rgb(192, 158, 158);
+}
+
+section#about {
+    background-color: rgb(61, 27, 27);
+}
+
+section#service {
+    background-color: rgb(48, 53, 50);
+}
+
+section#contact {
+    background-color: rgb(192, 158, 158);
+}
+
+/* css is added for image*/
+img {
+    border-radius: 8px;
+    width: 200px;
+}
+
+#table2 {
+    width: 100%;
+    padding-left: 30px;
+}
+#table2, #th2, #td2 {
+    /*border: 1px solid black;*/
+    width: auto;
+}
+
+@media only screen and (max-width:350px) {
+    section h1 {
+        font-size: 20px;
+    }
+    section#home {
+        background-color: black;
+    }
+
+    section#trial{
+        background-color: rgb(179, 13, 13);
+    }
+}
