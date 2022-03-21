@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /* border-style: solid; */
+    /* border-color: azure; */
+    /* Scroll Snap */
+    scroll-snap-align: center;
+}
+
+section#home {
+    background-color: blueviolet;
+}
+
+section#cv {
+    background-color: red;
+}
+
+section#skills {
+    background-color: lightgreen;
+}
+
+section#contact {
+    background-color: lightslategray;
+}
